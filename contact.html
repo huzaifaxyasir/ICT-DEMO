@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+    <style>
+        body {
+  font-family: sans-serif;
+  background-color: #C5856C; /* Dull orangish brown background */
+  color: #FFFFFF; /* White text for contrast */
+}
+
+header, main, footer {
+  padding: 1rem;
+}
+
+h1, h2, h3, a {
+  color: #F5D5C5; /* Lighter orangish brown for headings and links */
+}
+
+a:hover {
+  color: #E5B5A5; /* Darker orangish brown on hover */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav li.active a {
+  color: #C5856C; /* Active link matches background color */
+  text-decoration: underline;
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  border: 1px solid #F5D5C5;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #F5D5C5;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #F5D5C5;
+  color: #C5856C;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #E5B5A5;
+}
+
+    </style>
+
+    
+<meta
+ 
+charset="UTF-8">
+
+    
+<meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+
+    
+<title>Dermatologist Website | Contact Us</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Dr. Deeba Sattar, Dermatologist</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Schedule an appointment or ask a question. We're here to help.</p>
+
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p>+1 (555) 555-5555</p>
+
+                <h3>Email</h3>
+                <p><a href="mailto:info@dermatologist.com">info@dermatologist.com</a></p>
+
+                <h3>Address</h3>
+                <p>Jinnah Memorial Hospital<br>Rawalpindi, Pakistan</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Contact Form</h3>
+                <form action="contact.php" method="post">
+                
+    
+<label
+ 
+for="name">Name:</label>
+
+                    
+<input
+ 
+type="text"
+ 
+id="name"
+ 
+name="name"
+ 
+required><br><br>
+
+                    
+<label
+ 
+for="email">Email:</label>
+
+                    
+<input
+ 
+type="email"
+ 
+id="email"
+ 
+name="email"
+ 
+required><br><br>
+
+             
+       
+<label
+ 
+for="message">Message:</label><br>
+
+                    
+<textarea
+ 
+id="message"
+ 
+name="message"
+ 
+rows="5"
+ 
+required></textarea><br><br>
+
+                    
+<button
+ 
+type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dr. John Doe Dermatology</p>
+    </footer>
+</body>
+</html>
